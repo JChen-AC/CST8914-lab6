@@ -28,7 +28,18 @@
 		margin-left: 15px;
 		margin-right: 15px;
 	}
+	.outer_heading{
+		background-color: aqua;		
+	}
+	.inner_heading{
+		background-color: greenyellow;
+	}
+	.year{
+		background-color: rebeccapurple;
+	}
+
 	</style>
+	
 </head>
 
 
@@ -89,7 +100,32 @@
 			<p>Hi/Max agents go above and beyond and always strive to be the best they can be. HI/MAX is extremely community focused, and our agents are too!</p>
 			<h2>Stats of HI/Max</h2>
 			<table>
-
+				
+				<tr class="outer_heading">
+					<th rowspan="2" id="y">Year</th>
+					<th colspan="2" id="s">Sold Properties</th>
+					<th colspan="2" id="a">Average Selling Price</th>
+				</tr>					
+				<tr class="inner_heading">
+					<th id="s1" headers="s"> Quebec</th>
+					<th id="s2" headers="s"> Ontario</th>
+					<th id="a1" headers="a"> Single house</th>
+					<th id="a2" headers="a"> Condo</th>
+				</tr>
+				<tr>
+					<td headers="y" class="year">2021</td>
+					<td headers="s s1">50</td>
+					<td headers="s s2">100</td>
+					<td header="a a1">$500,000</td>
+					<td header="a a2">$189,00</td>
+				</tr>
+				<tr>
+					<td headers="y" class="year">2022</td>
+					<td headers="s s1">100</td>
+					<td headers="s s2">200</td>
+					<td header="a a1">$780,000</td>
+					<td header="a a2">$240,00</td>
+				</tr>
 			</table>
 		</main>
 		<aside> <!-- NOT LEFT JUSTIFIED-->
