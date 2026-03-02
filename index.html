@@ -28,17 +28,35 @@
 		margin-left: 15px;
 		margin-right: 15px;
 	}
+
 	.outer_heading{
-		background-color: aqua;		
+		background-color: #363636;		
+		color:white;
+		text-align: center;
+		margin-left: auto;
+  		margin-right: auto;
+		
 	}
 	.inner_heading{
-		background-color: greenyellow;
+		background-color: #525252;
+		color:white;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+
 	}
 	.year{
-		background-color: rebeccapurple;
+		background-color: #B8B8B8;
+		color:black;
+		text-align: center;
+		margin-left: auto;
+  		margin-right: auto;
 	}
 	table{
 		width:65%;
+		margin-left: auto;
+  		margin-right: auto;	
+		height: 20%;
 	}
 	</style>
 	
@@ -46,7 +64,7 @@
 
 
 <body>	
-	<header aria-labelledby="Site Header">
+	<header aria-label="Site Header">
 		<div> <!-- start of header-->
 
 					<div class="app-bar">
@@ -89,13 +107,13 @@
 		</div> <!-- end of header-->
 	</header>
 	<main property="mainContentOfPage" class="container" aria-labelledby="Main Content of Site">	
-		<article aria-labelledby="MI/Max Real Estate article">
-			<header aria-labelledby="Page Header"> <!-- WHAT SHOULD THE TITLE BE -->
+		<article aria-label="MI/Max Real Estate article">
+			<header aria-label="Page Header"> <!-- WHAT SHOULD THE TITLE BE -->
 				<h1>HI/Max Real Estate & Houses</h1>
 				<p>Buying or selling a home is likely the largest and most important transaction you’ll ever make. That’s why so many trust Hi/MAX Real Estate, which according to Canadian consumers, has been voted #1 Most Trusted Real Estate Agents in Canada six times in a row.</p>
 				<a href = http://www.google.ca > Let's get started with HI/Max</a> <!-- NEED BETTER THING -->
 			</header>
-			<aside> <!-- TAB ORDER IS BAD-->
+			<aside aria-label="Additional Resources for buying and selling"> <!-- TAB ORDER IS BAD-->
 				<h2> Related resources</h2>
 				<p>It's time to sell and find the next "one". Let us help you navigate the ins & outs of your next move. </p>
 				<ul>
@@ -110,7 +128,7 @@
 					</li>
 				</ul>
 			</aside>
-			<section aria-labelledby="Page body" class="article_body">
+			<section aria-label="Page body" class="article_body">
 				<h2>Why choosing HI/Max</h2>
 				<p>Hi/Max agents go above and beyond and always strive to be the best they can be. HI/MAX is extremely community focused, and our agents are too!</p>
 				<h2>Stats of HI/Max</h2>
@@ -145,7 +163,7 @@
 			</section>
 			
 			<div class="clear"></div>
-			<footer aria-labelledby="Page Footer">
+			<footer aria-label="Page Footer">
 				<h2>More Resources on How to Choose the Right Agent</h2>
 				<div class="row">
 					<section aria-labelledby="Risk of selling a home by yourself">
@@ -187,7 +205,7 @@
 
 
 	</main>
-	<footer aria-labelledby="Site Footer">
+	<footer aria-label="Site Footer">
 		<div id="wb-info" class=" wb-navcurr-inited">
 			<div class="gc-sub-footer">
 				<div class="container d-flex align-items-center">
