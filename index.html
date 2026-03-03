@@ -24,11 +24,16 @@
     }
 
 	/* added the following styles */
+	.middle{
+		display:flex;
+		align-items: flex-start;
+		gap:20px;
+	}
+	.article_body{
+		flex:3;
+	}
 	aside{
-		float:right;
-		width:25%;
-		margin-left: 15px;
-		margin-right: 15px;
+		flex:1;
 	}
 
 	.outer_heading{
@@ -115,60 +120,61 @@
 				<p>Buying or selling a home is likely the largest and most important transaction you’ll ever make. That’s why so many trust Hi/MAX Real Estate, which according to Canadian consumers, has been voted #1 Most Trusted Real Estate Agents in Canada six times in a row.</p>
 				<a href = http://www.google.ca > Let's get started with HI/Max</a> <!-- NEED BETTER THING -->
 			</header>
-			<aside aria-label="Additional Resources for buying and selling"> <!-- TAB ORDER IS BAD--> <!-- Added the aside region and its contents -->
-				<h2> Related resources</h2>
-				<p>It's time to sell and find the next "one". Let us help you navigate the ins & outs of your next move. </p>
-				<ul>
-					<li>
-						<a href=http://www.google.ca/.>Looking for an upgrade?</a>
-					</li>
-					<li>
-						<a href = http://www.google.ca>Buying tips</a>
-					</li>
-					<li>
-						<a href = http://www.google.ca> How much is your current home worth? </a>
-					</li>
-				</ul>
-			</aside>
-			<section aria-label="Page body" class="article_body">
-				<h2>Why choosing HI/Max</h2>
-				<p>Hi/Max agents go above and beyond and always strive to be the best they can be. HI/MAX is extremely community focused, and our agents are too!</p>
-				<h2>Stats of HI/Max</h2>
-				<table> <!-- Created table and filled in contents-->
-					
-					<tr class="outer_heading">
-						<th rowspan="2" id="y">Year</th>
-						<th colspan="2" id="s">Sold Properties</th>
-						<th colspan="2" id="a">Average Selling Price</th>
-					</tr>					
-					<tr class="inner_heading">
-						<th id="s1" headers="s"> <span lang="fr">Quebec</span></th>
-						<th id="s2" headers="s"> Ontario</th>
-						<th id="a1" headers="a"> Single house</th>
-						<th id="a2" headers="a"> Condo</th>
-					</tr>
-					<tr>
-						<td headers="y" class="year">2021</td>
-						<td headers="s s1">50</td>
-						<td headers="s s2">100</td>
-						<td header="a a1">$500,000</td>
-						<td header="a a2">$189,00</td>
-					</tr>
-					<tr>
-						<td headers="y" class="year">2022</td>
-						<td headers="s s1">100</td>
-						<td headers="s s2">200</td>
-						<td header="a a1">$780,000</td>
-						<td header="a a2">$240,00</td>
-					</tr>
-				</table>				
-			</section>
-			
+			<div class="middle">			
+				<section aria-label="Page body" class="article_body">
+					<h2>Why choosing HI/Max</h2>
+					<p>Hi/Max agents go above and beyond and always strive to be the best they can be. HI/MAX is extremely community focused, and our agents are too!</p>
+					<h2>Stats of HI/Max</h2>
+					<table> <!-- Created table and filled in contents-->
+						
+						<tr class="outer_heading">
+							<th rowspan="2" id="y">Year</th>
+							<th colspan="2" id="s">Sold Properties</th>
+							<th colspan="2" id="a">Average Selling Price</th>
+						</tr>					
+						<tr class="inner_heading">
+							<th id="s1" headers="s"> <span lang="fr">Quebec</span></th>
+							<th id="s2" headers="s"> Ontario</th>
+							<th id="a1" headers="a"> Single house</th>
+							<th id="a2" headers="a"> Condo</th>
+						</tr>
+						<tr>
+							<td headers="y" class="year">2021</td>
+							<td headers="s s1">50</td>
+							<td headers="s s2">100</td>
+							<td headers="a a1">$500,000</td>
+							<td headers="a a2">$189,000</td>
+						</tr>
+						<tr>
+							<td headers="y" class="year">2022</td>
+							<td headers="s s1">100</td>
+							<td headers="s s2">200</td>
+							<td headers="a a1">$780,000</td>
+							<td headers="a a2">$240,000</td>
+						</tr>
+					</table>				
+				</section>
+				<aside aria-label="Additional Resources for buying and selling"> <!-- TAB ORDER IS BAD--> <!-- Added the aside region and its contents -->
+					<h2> Related resources</h2>
+					<p>It's time to sell and find the next "one". Let us help you navigate the ins & outs of your next move. </p>
+					<ul>
+						<li>
+							<a href=http://www.google.ca/.>Looking for an upgrade?</a>
+						</li>
+						<li>
+							<a href = http://www.google.ca>Home Buying tips</a>
+						</li>
+						<li>
+							<a href = http://www.google.ca> How much is your current home worth? </a>
+						</li>
+					</ul>
+				</aside>
+			</div>
 			<div class="clear"></div>
 			<footer aria-label="Page Footer">
 				<h2>More Resources on How to Choose the Right Agent</h2>
 				<div class="row">
-					<section aria-labelledby="Risk of selling a home by yourself"> <!-- Separated this into its own section and added description that can be read by screen reader-->
+					<section aria-label="Risk of selling a home by yourself"> <!-- Separated this into its own section and added description that can be read by screen reader-->
 						<div class="col-md-4 ">
 							<!-- Added section content, working link and an image with alt text-->
 							<img src="1.png" alt="House for sale"> <!--- Could be decorative -->
@@ -178,7 +184,7 @@
 							</p>
 						</div>
 					</section>
-					<section aria-labelledby="Questions to ask about your realtor"> <!-- Separated this into its own section and added description that can be read by screen reader-->
+					<section aria-label="Questions to ask about your realtor"> <!-- Separated this into its own section and added description that can be read by screen reader-->
 						<div class="col-md-4">
 							<!-- Added section content, working link and an image with alt text-->
 							<img src="2.png" alt="Ask questions"> <!--- Could be decorative -->
@@ -188,7 +194,7 @@
 							</p>
 						</div>
 					</section>
-					<section aria-labelledby="Reaons to use Realtor"> <!-- Separated this into its own section and added description that can be read by screen reader-->
+					<section aria-label="Reaons to use Realtor"> <!-- Separated this into its own section and added description that can be read by screen reader-->
 						<div class="col-md-4">
 							<!-- Added section content, working link and an image with alt text-->
 							<img src="3.png" alt="Realtor selling house"> <!--- Could be decorative -->
